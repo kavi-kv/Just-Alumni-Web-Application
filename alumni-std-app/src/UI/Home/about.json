@@ -1,0 +1,21 @@
+
+
+{
+    "about": [
+        {
+            "title": "Vision",
+            "card_logo": "../../../public/reshot-icon-vision-M9Q8KVDJPC.svg",
+            "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available"
+        },
+        {
+            "title": "Mission",
+            "card_logo": "../../../public/free_icon.svg",
+            "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available"
+        },
+        {
+            "title": "Core Values",
+            "card_logo": "../../../public/core_value.svg",
+            "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available "
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    /* background-image:linear-gradient(rgba(24, 36, 72,0.8 ),rgba(86, 62, 39, 1)),url(../../public/just.jpg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.card_container
+{
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    width: 95%;
+    height: 560px;
+    margin-top: 30px;
+    
+}
+.left_container .login_title{
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 27px;
+    font-family: sans-serif;
+}
+.left_container{
+    background-color: #f5f6f8;
+    box-shadow: 0px -1px 34px -6px rgba(0,0,0,0.53);
+-webkit-box-shadow: 0px -1px 34px -6px rgba(0,0,0,0.53);
+-moz-box-shadow: 0px -1px 34px -6px rgba(0,0,0,0.53);
+width: 420px;
+padding: 25px;
+border-radius: 7px;
+}
+.form_group_input{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.form_group_input input{
+    padding: 8px 6px;
+    border: 1px solid #182848;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.form_group_input label{
+    font-weight: bold;
+    opacity: 0.6;
+    font-size: 15px;
+    margin: 2px 0px;
+}
+.customA{
+    color: #182848;
+    cursor:pointer;
+}
+.other{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.other a.inputs{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.other .check{
+    margin-right: 7px;
+    
+}
+.right_container{
+    flex: 2;
+    margin-left: 7px;
+    background-image: linear-gradient(rgba(24, 36, 72,0.5),rgba(86, 62, 39, 0.7)),url(../../public/alumni.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+   
+   
+}
+a.forgot{
+    text-decoration: underline;
+}
+.other a{
+    color: #182848;
+    font-weight: bold;
+    opacity: 0.6;
+    font-size: 13px;
+    margin: 2px 0px; 
+}
+.login:focus{
+    border: none;
+    outline: none;
+}

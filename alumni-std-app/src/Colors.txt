@@ -1,0 +1,3 @@
+#CB1C8D
+#460C68 (secondary color)
+#2A2F4F (primary color)
