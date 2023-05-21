@@ -1,0 +1,18 @@
+{
+    "events": [
+        {
+            "title": "Graduation Bach Five @JUST.",
+            "started": "1-may-2023",
+            "Location": "Campus 1",
+            "Participate": 900,
+            "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available"
+        },
+        {
+            "title": "Election Alumni Students",
+            "started": "1-may-2023",
+            "Location": "Campus 1",
+            "Participate": 900,
+            "description": "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available"
+        }
+    ]
+}
