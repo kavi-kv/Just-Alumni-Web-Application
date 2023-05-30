@@ -1,0 +1,5 @@
+.sidebar-container {
+  min-height: 100vh;
+  overflow: hidden;
+  /* background-color: red !important; */
+}

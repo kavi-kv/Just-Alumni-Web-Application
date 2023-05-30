@@ -1,0 +1,65 @@
+    <div className="col-2 bg-white sidebar-container">
+      <div className="p-2">
+        <div className={styles.user_zone}>
+          <Avatar sizes="large" src="../../logo.jpg" />
+          <div>
+            <span className="username-title">JUST ALUMNI</span>
+          </div>
+        </div>
+        <hr />
+        <div className={styles.list_content}>
+          <h6>Super Admin</h6>
+          <div className={styles.list}>
+            <div className={styles.list_item}>
+              <Dashboard fontSize="small" />
+              <Link to={"/dashboard"} className={styles.link_title}>
+                Dashboard
+              </Link>
+            </div>
+          </div>
+          <div className={styles.list}>
+            <div className={styles.list_item}>
+              <TocIcon fontSize="small" />
+              <Link to={"/AlumniList"} className={styles.link_title}>
+                Alumni List
+              </Link>
+            </div>
+          </div>
+          <div className="list">
+            <div className={styles.list_item}>
+              <TodayIcon fontSize="small" />
+              <Link to={"/Events"} className={styles.link_title}>
+                Events
+              </Link>
+            </div>
+          </div>
+          <div className="list">
+            <div className={styles.list_item}>
+              <CardTravel fontSize="small" />
+              <Link to={"/jobs"} className={styles.link_title}>
+                Opportunities
+              </Link>
+            </div>
+          </div>
+          <div className="list">
+            <div className={styles.list_item}>
+              <PeopleIcon fontSize="small" />
+              <Link to={"/users"} className={styles.link_title}>
+                System Users
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className={styles.list_content}>
+          <h6>Settings</h6>
+          <div className={styles.list}>
+            <div className={styles.list_item}>
+              <SettingsAccessibilityIcon fontSize="small" />
+              <Link to={"#"} className={styles.link_title}>
+                Alumni Profile
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
