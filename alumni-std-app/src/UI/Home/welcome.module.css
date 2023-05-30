@@ -145,5 +145,54 @@ body {
 }
 
 @media (max-width: 750px) {
-
+    .welcome_container{
+        margin: 5px 10px;
+        /* background-color: #460C68; */
+    }
+    .welcome_content {
+        padding: 10px;
+        margin: 0 0px;
+        /* background-color: chartreuse; */
+    }
+    .pressident_info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        /* background-color: blueviolet; */
+    }
+    
+    .contact_info {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+        padding-top: 10px;
+        /* background-color: #460C68;
+        border-radius: 10px; */
+        padding-left: 10px;
+        margin: 80px 1px;
+    }
+    .contact_header {
+        font-size: 16px;
+        font-family: 'Roboto';
+    }
+    .just_addresses {
+        font-size: 16px;
+        font-family: 'Barlow Semi Condensed';
+    }
+    .just_title_addresses {
+        font-size: 12px;
+        font-family: 'Barlow Semi Condensed';
+    }
+    .social_media_header {
+        font-size: 16px;
+    }
+    .alumni_desc {
+        font-size: 20px;
+    }
 }

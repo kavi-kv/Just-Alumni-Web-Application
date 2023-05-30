@@ -7,6 +7,9 @@ import Login from './UI/Login/Login'
 import Team from './UI/Home/Team'
 import data from './UI/Home/Team.json'
 import Gallary from './UI/Home/Gallary'
+import Devs from './UI/Home/Devs'
+// import data from './TestimonialData'
+// import Test from './Test'
 
 
 
@@ -15,7 +18,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   
     {/* <Team data={data}/> */}
     {/* <Gallary/> */}
-    <App/>
-  
+    {/* <Test/> */}
+  {/* <Devs data={data}/> */}
+  <App/>
   </div>,
 )

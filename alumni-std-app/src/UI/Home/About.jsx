@@ -18,7 +18,6 @@ export default function About(props)
             <div className={styles.container}>
                 {props.data.about.map((value)=> {
                     return(
-               
                  <div className={styles.card}>
                     
                     <div className={styles.card_header_container}>

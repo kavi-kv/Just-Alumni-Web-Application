@@ -39,9 +39,12 @@ export default function Footer() {
                 </div>  
                 <div className={styles.contacts}>
                     <h3>Contacts</h3>
-                    <h5> Phone Number: +252616265323</h5>
-                    <h5> Fax: +11123321111367</h5>
-                    <h5> Email: just@alumni.com</h5>
+                    <br />
+                    <div className={styles.bottom_sec}>
+                        <h5> Phone Number: +252616265323</h5>
+                        <h5> Fax: +11123321111367</h5>
+                        <h5> Email: just@alumni.com</h5>
+                    </div>
                 </div>
                 <div className={styles.subs_section}>
                     <input type="email" placeholder='Enter Email'/>

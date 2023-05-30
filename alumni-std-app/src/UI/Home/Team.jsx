@@ -13,6 +13,7 @@ import {
   Container,
   Divider,
   Drawer,
+  Grid,
   IconButton,
   Menu,
   MenuItem,
@@ -21,6 +22,7 @@ import {
 } from "@mui/material";
 import data from './Team.json'
 import React, { useState } from "react";
+import styles from './team.module.css'
 
 export default function Dev(props) {
   const [anchor, setAnchor] = useState(null);
@@ -34,56 +36,58 @@ export default function Dev(props) {
     setAnchor(null);
   };
   return (
-    <Container sx={{ m: 4 }}>
-        {
-            props.data.team.map((value) => {
-                return(
-                    <>
-                    <Card sx={{ width: 300 }}>
-                        <CardHeader
-                        sx={{ mb: 1 }}
-                        avatar={<Avatar src={value.profile_img} />}
-                        title={value.FullName}
-                        subheader={value.Professional}
-                        action={
-                            <IconButton
-                            id="menu-button"
-                            aria-controls={open ? "menu-profile" : undefined}
-                            aria-expanded={open ? "menu-profile" : undefined}
-                            aria-haspopup={true}
-                            onClick={handleClcik}
-                            >
-                            <MoreOutlined />
-                            </IconButton>
-                        }
-                        />
-                        <Divider />
-                        <CardMedia
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+       <Container sx={{ m: 0 ,display: "grid",justifyContent: "center",alignItems: "center",height: "100vh",backgroundColor: "blue"  }}>
+      <div className={styles.team_header_container}>
+        <h2 className={styles.team_header}>About The Developers.</h2>
+        <p className={styles.team_desc}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sit alias voluptate magnam a est expedita odio, omnis quis optio tempora fugiat eveniet laudantium, rerum ab atque sapiente quibusdam nam.</p>
+      </div>
+      <Grid container direction="row" spacing={1}>
+        {props.data.team.map((value) => {
+          return (
+            <Grid item key={value.id}>
+              <Card sx={{ width: 300,  }}>
+                <CardHeader
+                  sx={{ mb: 1 }}
+                  avatar={<Avatar src={value.profile_img} sx={{ width: 80, height: 80 }} />}
+                  title={value.FullName}
+                  subheader={value.Professional}
+                  action={
+                    <IconButton
+                      id="menu-button"
+                      aria-controls={open ? "menu-profile" : undefined}
+                      aria-expanded={open ? "menu-profile" : undefined}
+                      aria-haspopup={true}
+                      onClick={handleClcik}
+                    >
+                      <MoreOutlined />
+                    </IconButton>
+                  }
+                />
+                <Divider />
+                {/* <CardMedia
                         sx={{ p: 1, borderRadius: 4 }}
                         component={"img"}
                         image="../../logo.jpg"
                         height={140}
                         width={140}
-                        />
+                        /> */}
 
-                        <CardContent>
-                        <Typography>
-                            {value.details}
-                        </Typography>
-                        </CardContent>
-                        <Divider />
-                        <CardActions sx={{ display: "flex", flexWrap: "wrap" }}>
-                        {value.skills.map((skill)=> {
-                            return(
-                                <Chip sx={{ mb: 2 }} label={skill} variant="filled" size="medium" key={skill} />
-                            )
-                        })}
-                        </CardActions>
-            </Card>
-                    </>
-                )
-            })
-        }
+                <CardContent>
+                  <Typography>{value.details}</Typography>
+                </CardContent>
+                <Divider />
+                <CardActions sx={{ display: "flex", flexWrap: "wrap" }}>
+                  {value.skills.map((skill) => {
+                    return <Chip sx={{ mb: 2 }} label={skill} variant="filled" size="medium" key={skill} />;
+                  })}
+                </CardActions>
+              </Card>
+            </Grid>
+          );
+        })}
+      </Grid>
+
       
 
       <Menu
@@ -106,5 +110,7 @@ export default function Dev(props) {
         </Box>
       </Drawer> */}
     </Container>
+    </div>
+   
   );
 }

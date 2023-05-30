@@ -12,7 +12,7 @@ body{
   grid-template-columns: repeat(1, 1fr);
   justify-content: center;
   align-items: center;
-  justify-items: center;
+  margin-left: 10px;
   /* background-color: #996ed9; */
   max-width: 100%;
   height: 520px;
@@ -40,10 +40,11 @@ body{
   /* margin-top: 20px; */
   }
 
-  .sub-container {
+  /* .sub-container {
+
     align-items: center;
     justify-content: center;
-  }
+  } */
   
   .header-info {
     display: flex;
@@ -90,3 +91,23 @@ body{
   font-size: 14px;
   opacity: 50%;
 }
+
+
+@media (max-width: 750px) { 
+  .container-test {
+    justify-content: center;
+    align-items: center;
+  }
+  .testimonial-card {
+    height: 410px;
+    width: 310px;
+    overflow: scroll;
+    }
+    .comment {
+      padding-top: 10px;
+      line-height: 1.2;
+    }
+    .bottom-info {
+      margin-top: 20px;
+    }
+ }

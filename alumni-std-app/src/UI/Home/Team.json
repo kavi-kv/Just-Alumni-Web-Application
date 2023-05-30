@@ -1,12 +1,49 @@
 {
     "team": [
         {
-            "FullName": "Abdirahman Mohamud",
-            "profile_img" : "../../../public/abdirahman_cj.jpeg",
+            "id" : 1,
+            "FullName": "Abdirahman Mohamud Abdi",
+            "profile_img" : "../../../public/nerds/abdirahman_cj.jpeg",
             "cover_img" : "",
             "Professional": "Software Engineer",
-            "details": "Our Details Having Acnhor element more details about this developer click the more button",
+            "details": "A software engineer. He has experience in several programming languages, including PHP, Javascript, C#, Java, and Reactjs. With his diverse skill set, he is well-equipped to tackle a wide range of software development projects.",
+            "skills": ["PHP","Javascript","C#","Java","Reactjs"]
+        },
+        {
+            "id" : 2,
+            "FullName": "Mohamed Ali Abdi",
+            "profile_img" : "../../../public/nerds/mo_ali.jpeg",
+            "cover_img" : "",
+            "Professional": "A fullstack Mobile & Web developer ",
+            "details": "A versatile Mobile and Web Developer with expertise in C#, Dart, ReactJS, and Java. His strong background in both mobile and web development enables him to tackle a wide range of projects. Mohamed's commitment to continuous learning and his passion for technology make him a valuable contributor in the development field.",
+            "skills": ["C#","Dart","Reactjs","Java"]
+        },
+        {
+            "id" : 3,
+            "FullName": "MohamedNuur Mohamed Isaaq",
+            "profile_img" : "../../../public/nerds/moha_nur.jpeg",
+            "cover_img" : "",
+            "Professional": "A fullstack Developer",
+            "details": "He is a professional software engineer. He has experience in several programming languages, including Javascript, PHP, C#, and Java. With his diverse skill set, he is well-equipped to tackle a wide range of software development projects.",
+            "skills": ["Javascript","PHP","C#","Java"]
+        },
+        {
+            "id" : 4,
+            "FullName": "Mohamed Abdiqadir Omar",
+            "profile_img" : "../../../public/nerds/moha_amin.jpeg",
+            "cover_img" : "",
+            "Professional": "Software Engineer",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti fugiat, consequatur laboriosam qui dicta fuga distinctio consectetur omnis. Numquam, modi obcaecati harum recusandae earum ea ullam quaerat deserunt, autem eaque consequatur voluptates consectetur ratione repellendus.",
             "skills": ["HTML","Javascript","C#","Java"]
+        },
+        {
+            "id" : 5,
+            "FullName": "Bahjo Isaaq Mohamed",
+            "profile_img" : "../../../public/nerds/bahjo.jpeg",
+            "cover_img" : "",
+            "Professional": "Software Developer",
+            "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti fugiat, consequatur laboriosam qui dicta fuga distinctio consectetur omnis. Numquam, modi obcaecati harum recusandae earum ea ullam quaerat deserunt, autem eaque consequatur voluptates consectetur ratione repellendus.",
+            "skills": ["Reactjs","Javascript","PHP","Java"]
         }
     ]
 }
