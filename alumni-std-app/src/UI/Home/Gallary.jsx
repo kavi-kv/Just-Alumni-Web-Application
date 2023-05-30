@@ -23,16 +23,19 @@ export default function Gallary() {
     <>
         <div className={styles.cover_container}>
             <img src={cover_img} alt="cover_img" />
+           
         </div>
         <div className='quotes'></div>
         <div className={styles.gallary_header}>
-            <h2>Gallary</h2>
-            <p className={styles.details}>
+            
+            {/* <p className={styles.details}>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br/> Consectetur beatae dicta eligendi explicabo cum,<br/> voluptatibus pariatur! Voluptate recusandae, iure deleniti quasi earum <br/>nobis odio eum asperiores ratione accusamus voluptatem sapiente.
-            </p>
+            </p> */}
         </div>
         <Container sx={{ marginTop: '30px',marginBottom: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+       
         {
+          
             <ImageList
             sx={{
                 width: 1100,
@@ -64,7 +67,7 @@ export default function Gallary() {
                     position="top"
                     actionIcon={
                         <IconButton
-                        sx={{ color: 'white' }}
+                        sx={{ color: 'white' }} 
                         aria-label={`star ${item.title}`}
                         >
                         <StarBorderIcon />

@@ -1,0 +1,20 @@
+{
+    "faculties":[
+        {
+            "id": 1,
+            "name": "Computer Application"
+        },
+        {
+            "id": 1,
+            "name": "Health Science"
+        },
+        {
+            "id": 1,
+            "name": "Engineering"
+        },
+        {
+            "id": 1,
+            "name": "Business Administration"
+        }
+    ]
+}

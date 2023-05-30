@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;700&display=swap');
 
 .front-section{
-    background-image: linear-gradient(rgba(42, 47, 79, 0.9),rgba(42, 47, 79, 0.8)),url(../../public/download.jpg);
+    background-image: linear-gradient(rgba(42, 47, 79, 0.6),rgba(42, 47, 79, 0.8)),url(../../public/event_.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -27,19 +27,19 @@
 }
 
 .explore{
-    background-color:  #ff00a6;
+    background-color:  #2A2F4F;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-weight: bold;
-    padding: 10px;
+    padding: 7px;
     width: 160px;
     border-radius: 7px;
     border: none;
     outline: none;
     cursor: pointer;
-    font-size: medium;
+    font-size: 19px;
     margin-top: 20px;
 }
 .explore:hover {

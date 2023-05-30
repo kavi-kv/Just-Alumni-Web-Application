@@ -1,28 +1,68 @@
 import { Button, Dialog, DialogActions, DialogTitle, Typography,DialogContent, Divider, Alert } from '@mui/material'
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import { EventContext } from '../../BackEnd/context/EventContext'
+import UnlinkModal from './UnLinkModal';
 
 export default function InfoModal(props) {
 
+    const { Unlink, unLinkResponse } = useContext(EventContext);
+    const [showUnlinkModal,setShowUnlinkModal]=useState(false);
+    const handleUnLink=(e)=>{
+        var data = {
+          action: "unLink",
+          data: {
+            member: sessionStorage.getItem("alumni_id"),
+            event: props.eventID,
+          },
+        };
+        Unlink(data);
+        setShowUnlinkModal(true);
+        props.setOpen(false);
+    }
   return (
     <div>
+      {props.response && (
         <Dialog open={props.open}>
-            <DialogTitle>
-                <Typography variant='h6'>Event Participation</Typography>
-            </DialogTitle>
-            <Divider/>
-            <DialogContent>
-                <Typography variant='p'></Typography>
-                <Alert variant='standard' severity='info'>
-                The forEach() method can be used to iterate over an array outside of your JSX code in React.
-
-If you need to iterate over an array and render its elements directly in your JSX code, use the map() method instead.
+          <DialogTitle>
+            <Typography variant="h6">Event Participation</Typography>
+          </DialogTitle>
+          <Divider />
+          <DialogContent>
+            {props.response.validity ? (
+              <>
+                <Typography variant="p"></Typography>
+                <Alert variant="standard" severity="info">
+                  {props.response.response}
                 </Alert>
-            </DialogContent>
-            <DialogActions>
-              
-                <Button variant='outlined' color="error" onClick={()=>props.setOpen(false)}>Close</Button>
-            </DialogActions>
+              </>
+            ) : (
+              <>
+                <Typography variant="p"></Typography>
+                <Alert variant="standard" severity="error">
+                  {props.response.response}
+                </Alert>
+              </>
+            )}
+          </DialogContent>
+          <DialogActions>
+            <Button
+              variant="contained"
+              color="info"
+              onClick={() => props.setOpen(false)}
+            >
+              Close
+            </Button>
+           {!props.response.validity ?  <Button
+              variant="contained"
+              color="error"
+              onClick={handleUnLink}
+            >
+              UnParticipate
+            </Button> : null }
+          </DialogActions>
         </Dialog>
+      )}
+      <UnlinkModal response={unLinkResponse} open={showUnlinkModal} setOpen={setShowUnlinkModal}/>
     </div>
-  )
+  );
 }
