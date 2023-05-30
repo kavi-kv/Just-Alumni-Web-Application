@@ -1,31 +1,28 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* font-family: 'Poppins',sans-serif; */
-
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins',sans-serif; */
 }
 
-body{ 
-    background-color:whitesmoke;
-    color: #2A2F4F;
+body {
+  background-color: whitesmoke;
+  color: #2a2f4f;
 }
 
-.reg_container{
- margin: 36px auto;
-    /* position: relative; */
-    /* max-width: 8800px; */
-    width: 80%;
-    border-radius: 6px;
-    padding: 30px;
-    /* margin: 20px 15px; */
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    
+.reg_container {
+  margin: 36px auto;
+  /* position: relative; */
+  /* max-width: 8800px; */
+  width: 80%;
+  border-radius: 6px;
+  padding: 30px;
+  /* margin: 20px 15px; */
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.reg_container header{
+.reg_container header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,204 +32,191 @@ body{
   /* text-align: center; */
   margin-bottom: 30px;
 }
-.reg_container header img{
+.reg_container header img {
   width: 80px;
   height: 80px;
-  border-radius: 70px
+  border-radius: 70px;
 }
 
+.reg_container form {
+  /* position: relative; */
+  margin-top: 16px;
+  /* min-height: 490px; */
 
-
-
-.reg_container form{
-    /* position: relative; */
-    margin-top: 16px;
-    /* min-height: 490px; */
-
-    background-color: #fff;
+  background-color: #fff;
 }
 
-
-
-.reg_container form .title{
-    display: block;
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 6px 0;
-    color: #333;
-
+.reg_container form .title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 6px 0;
+  color: #333;
 }
 
-.reg_container form .fields{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.reg_container form .fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-form .fields .input-field{
-
-
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin: 4px 0;
-
+form .fields .input_field {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 4px 0;
 }
-.input-field label{
-    font-size: 18px;
-    font-weight: 500;
-    color:  #2e2e2e;
-   
+.input-field label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #2e2e2e;
 }
-.input-field input{
-    outline: none;
-    font-size: 14px;
-    font-weight: 400;
-    color:  #333;
-    border-radius: 5px;
-    border: 1px solid red;
-    padding: 0 15px;
-    height: 42px;
-    margin: 8px 0;
-
+.input-field input {
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  border-radius: 5px;
+  border: 1px solid red;
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 0;
 }
-
-.input-field input:is(:focus,:valid){
-    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+.photo_uploader input{
+  padding: 90px;
+  background-color: red;
+}
+.input-field input:is(:focus, :valid) {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
 }
 
 .input-field {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-    
-  }
-  
-  label .input-field  {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
 
+label .input-field {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
 
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(130, 106, 251);
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
 
-  .form .gender-box {
-    margin-top: 20px;
-  }
-  .gender-box h3 {
-    color: #333;
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-  .form :where(.gender-option, .gender) {
-    display: flex;
-    align-items: center;
-    column-gap: 50px;
-    flex-wrap: wrap;
-  }
-  .form .gender {
-    column-gap: 5px;
-  }
-  .gender input {
-    accent-color: rgb(130, 106, 251);
-  }
-  .form :where(.gender input, .gender label) {
-    cursor: pointer;
-  }
-  .gender label {
-    color: #707070;
-  }
+.form_group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
 
-  
-  .form_group {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.5rem;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="file"] {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Image */
-  .profile-image-container {
-    width: 150px;
-    height: 150px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.5rem;
-  }
-  
-  #profile-image-preview {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
- 
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
 
-  .form_group{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    row-gap: 8px;
-    column-gap: 8px;
-  }
-  .form_group .details{
-    display: flex;
-    flex-direction: column;
-  }
-  .form_group .details input, .mobile_ input{
-    border: 1px solid #2A2F4F;
-    outline: none;
+input[type='file']{
 
+ padding: 5px;
+}
+/* Image */
+.profile-image-container {
+  width: 150px;
+  height: 150px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
 
-  }
-  .mobile_{
-    display: flex;
-    flex-direction: column;
-  }
-  .batch{
-    border: 1px solid #2A2F4F;
-    outline: none;
-    padding: 9px;
-    border-radius: 6px;
-  }
-  .genderMale, .genderFemale{
-    margin-right: 5px;
-  }
-.genderLabel{
+#profile-image-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form_group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1px;
+  column-gap: 8px;
+}
+.form_group .details {
+  display: flex;
+  flex-direction: column;
+}
+.form_group .details input,
+.mobile_ input {
+  border: 1px solid #2a2f4f;
+  outline: none;
+}
+.mobile_ {
+  display: flex;
+  flex-direction: column;
+}
+.batch {
+  border: 1px solid #2a2f4f;
+  outline: none;
+  padding: 9px;
+  border-radius: 6px;
+}
+.genderMale,
+.genderFemale {
+  margin-right: 5px;
+}
+.genderLabel {
   display: flex;
   align-items: center;
   margin: 0px 8px;
 }
-.details.photo_section input{
+.details.photo_section input {
   /* background-color: green; */
   width: 100%;
-  
 }
-.register{
-  background-color: #2A2F4F;
+.register {
+  background-color: #2a2f4f;
   width: 120px;
   padding: 10px;
   border-radius: 8px;
@@ -241,26 +225,25 @@ form .fields .input-field{
   color: white;
   cursor: pointer;
 }
-.register:hover{
+.register:hover {
   opacity: 0.7;
 }
-  /* Responsive */
-
+/* Responsive */
 
 @media (max-width: 750px) {
-  .reg_container form{
-      overflow-y: scroll;
+  .reg_container form {
+    overflow-y: scroll;
   }
-  .reg_container form::-webkit-scrollbar{
-     display: none;
+  .reg_container form::-webkit-scrollbar {
+    display: none;
   }
-  form .fields .input-field{
-      width: calc(100% / 2 - 15px);
+  form .fields .input-field {
+    width: calc(100% / 2 - 15px);
   }
 }
 
 @media (max-width: 550px) {
-  form .fields .input-field{
-      width: 100%;
+  form .fields .input-field {
+    width: 100%;
   }
 }

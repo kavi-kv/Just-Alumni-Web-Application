@@ -1,5 +1,6 @@
 import React from "react";
 import president_image from '../../../public/maftuh.jpg'
+
 import styles from './welcome.module.css'
 
 export default function Welcome()
@@ -17,7 +18,7 @@ export default function Welcome()
                 <h2 className={styles.press_title}>Welcome To The Home Of Quality And Education</h2>
             </div> */}
             <div className={styles.welcome_content}>
-            <h2 className={styles.press_title}>Welcome To The Home Of Quality And Education</h2>
+            <h2  className={styles.press_title}>Welcome To The Home Of Quality And Education</h2>
                 <p className={styles.alumni_desc}>
                 Jamhuriyah Alumni is a community of former students who have graduated from Jamhuriyah University, a prestigious institution of higher learning located in the heart of the capital city. The alumni association serves as a platform for graduates to connect, network, and collaborate with each other, as well as with the university and its current students.
                 <br />

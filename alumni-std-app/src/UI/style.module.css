@@ -21,10 +21,11 @@ body{
     height: 70px;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center !important;
+    justify-content: space-between !important;
     /* top: 0; */
     background: #460C68;
+  
     padding: 0 20px; 
     box-shadow: 0 0 10px  rgba(0, 0, 0, 0.5);
     /* margin-top: 50px; */
@@ -32,15 +33,16 @@ body{
 
 .sub_container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center !important;
+    justify-content: space-between !important;
     gap: 30px;
+  
     /* background-color: blueviolet; */
     
 }
 
 .nav_list {
-    display: flex;
+    display: flex !important;
     gap: 20px;
     list-style: none;
     font-size: 16px;
@@ -63,8 +65,8 @@ body{
 }
 
 .login_btn {
-    height: 35px;
-    width: 80px;
+    height: 35px  !important;
+    width: 80px !important;
     border: none;
     border-radius: 2px;
     font-size: 1rem;
@@ -78,6 +80,7 @@ body{
 }
 
 .reg_area {
+    
     justify-content: center;
     align-items: center;
     gap: 10px;

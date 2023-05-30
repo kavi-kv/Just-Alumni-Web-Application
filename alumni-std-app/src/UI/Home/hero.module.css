@@ -47,7 +47,11 @@
     display: flex;
     flex-direction: column;
     justify-content: right;
+<<<<<<< HEAD
     
+=======
+    margin: 9px 0px;
+>>>>>>> 9fb22d53304bdee23d47a7a3450fdf5cc16162f5
 }
 
 .btn_container {
@@ -62,6 +66,7 @@
     border: none;
     background-color:  #ff00a6;
     color: #FFF;
+    margin: 10px 0px;
 }
 .welcome_btn:hover {
     background-color: #CB1C8D;

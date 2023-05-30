@@ -1,0 +1,17 @@
+.content-details{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+
+}
+.content-details span{
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.section{
+    color: white
+}
+.section.dar-color{
+    color: #fff;
+}

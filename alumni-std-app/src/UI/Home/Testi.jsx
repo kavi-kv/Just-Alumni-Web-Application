@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import './testimon.css'; // Import custom CSS file
 import data from "../../TestimonialData";
 import img from '../../assets/testimonial-img/ahmed_hssn.jpg'
-import { Container } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 
 const TestimonialCard = () => {
   const [slidesToShow, setSlidesToShow] = useState(3);
@@ -40,7 +40,8 @@ const TestimonialCard = () => {
   
   return (
    <Container>
-    {/* <span className="">Testimonials</span> */}
+   
+    <Typography variant='h6'>Testimonials</Typography>
      <Slider {...settings}>
       {data.map((testimonial, index) => (
         <div className="container-test" key={index}>

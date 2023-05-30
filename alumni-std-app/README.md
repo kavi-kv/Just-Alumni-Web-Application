@@ -15,7 +15,7 @@ A ReactJs-based platform for Jamhuriya University of Science and Technology post
 
 ## How to use 
 
-If you are Alumni Student from Jamhuriya University of Science and technology you can simply use by providing you're ID and full in registered in the university, and after a short review of your account the admins can confirm that you are eligible to use, after that you use directly
+If you are Alumni Student from Jamhuriya University of Science and technology you can simply use by providing you're ID and full in registered in the university, and after a short review of your account the admins can confirm that you are eligible to use, and send email to your  address after verified, after that you use directly
 
 
 ## Contrabuters (My group mates Fantastic 4++)
